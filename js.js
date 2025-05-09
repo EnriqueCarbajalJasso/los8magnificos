@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('menu-navegacion');
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('activo');
+    });
+  }
+});
+
 const track = document.querySelector('.carousel-track');
 const images = document.querySelectorAll('.carousel-track img');
 const prevBtn = document.querySelector('.carousel-btn.prev');
@@ -34,3 +45,10 @@ setInterval(() => {
     currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
     updateCarousel();
 }, 5000); // 5000 milisegundos = 5 segundos
+
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('menu-navegacion');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('activo');
+  });

@@ -279,3 +279,42 @@ footer {
         margin: 40px 10px;
     }
 }
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    top: 60px; /* o donde empiece tu menú */
+    right: 0;
+    background-color: #001f4d;
+    width: 100%;
+    z-index: 999;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px 20px;
+    text-align: right;
+  }
+
+  /* Opcional: ocultar menú por defecto */
+  nav {
+    display: none;
+  }
+
+  nav.activo {
+    display: block;
+  }
+
+  /* Botón hamburguesa */
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+  }
+}
